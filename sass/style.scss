@@ -128,11 +128,10 @@ body {
 
       .border-bottom {
         top: 100%;
-        left: 0;
-        right: 0;
         height: 3px;
         background: $secondary;
         position: relative;
+        width: 0;
 
         .dessin-point-left {
            top: -0.6vw;
@@ -146,17 +145,40 @@ body {
           position: relative;
         }
       }
+
+      .from-left {
+        left: 0;
+      }
+
+      .from-right {
+        right: 0;
+        width: 100%;
+        transform: translateX(100%);
+        background-color: $dark;
+      }
     }
+  }
+
+  .line-appear {
+    transition: all 1.3s;
+    width: 100% !important;
+  }
+
+  .line-appear-reverse {
+    transition: all 1.3s;
+    transform: translateX(0) !important;
   }
 
   .home-rubrique-right {
     background-color: $third;
     border-radius: 15% 0 0 15%;
+    opacity: 0;
   }
 
   .home-rubrique-left {
     background-color: $third;
     border-radius: 0 15% 15% 0;
+    opacity: 0;
   }
 
   #line1 {
@@ -198,6 +220,12 @@ body {
     grid-column: 1 / 3;
     grid-row: 4;
   }
+}
+
+.opaque-rubrique {
+  opacity: 100% !important;
+  transition: all 0.8s;
+  transition-delay: 1.3s;
 }
 
 footer {
