@@ -2,26 +2,28 @@ $primary: #23B5D3;
 $secondary: #007EA7;
 $third: #003459;
 $dark : #00171F;
-$background: #E8FFF9; // Bubbles
+$background: #f6fffc; // Bubbles
 $big-title-police: Verdana;
 $little-title-police: "Work sans";
 $text-police: Montserrat;
+$breakout: 576px;
 
 .front-grid {
   display: grid;
-  height: 100vh;
+  height: 85vh;
   width: 98vw;
   z-index: 5;
   margin-right: 1vw;
   margin-left: 1vw;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows:  1fr 1fr 2fr 2fr;
+  grid-template-rows:  1fr 2fr 0.5fr 3fr 3fr;
 
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: $breakout) {
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
     grid-template-rows: 1fr 1fr 2fr;
+    height: 100vh;
   }
 
 
@@ -34,27 +36,38 @@ $text-police: Montserrat;
     justify-content: center;
     z-index: 5;
 
-    @media screen and (min-width: 576px) {
+    @media screen and (min-width: $breakout) {
       grid-column: 2 / 5;
       grid-row: 2;
     }
 
     .big-title {
-      font-size: 52px;
+      font-size: 35px;
       color: $primary;
       font-family: $big-title-police;
+
+      @media screen and (min-width: $breakout) {
+        font-size: 52px;
+      }
     }
 
     .title-baseline {
-      font-size: 30px;
-      color: $secondary;
+      font-size: 25px;
+      color: $third;
       font-family: $little-title-police;
+      margin-bottom: 20px;
+
+      @media screen and (min-width: $breakout) {
+        font-size: 30px;
+        color: $secondary;
+        margin-bottom: 0;
+      }
     }
   }
 
   #intro-text1 {
     grid-column: 1 / 3;
-    grid-row: 3;
+    grid-row: 4;
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -69,7 +82,7 @@ $text-police: Montserrat;
 
   #intro-text2 {
     grid-column: 2 / 4;
-    grid-row: 4;
+    grid-row: 5;
     text-align: end;
     display: flex;
     flex-direction: column;
@@ -83,16 +96,24 @@ $text-police: Montserrat;
   }
 
   .intro-title {
-    font-size: 30px;
+    font-size: 20px;
     color: $secondary;
     font-family: $little-title-police;
     margin-bottom: 10px;
+
+    @media screen and (min-width: $breakout) {
+      font-size: 30px;
+    }
   }
 
   .intro-text {
-    font-size: 18px;
+    font-size: 12.5px;
     font-family: Montserrat;
     color: $dark;
+
+    @media screen and (min-width: $breakout) {
+      font-size: 18px;
+    }
   }
 
 }

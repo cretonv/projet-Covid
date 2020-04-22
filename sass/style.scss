@@ -2,12 +2,37 @@ $primary: #23B5D3;
 $secondary: #007EA7;
 $third: #003459;
 $dark : #00171F;
-$background: #E8FFF9; // Bubbles
+$background: #f6fffc; // Bubbles
 $big-title-police: Verdana;
 $little-title-police: "Work sans";
 $text-police: Montserrat;
+$breakout: 576px;
 
 @import './home-header.scss', './home-main.scss';
+@font-face {
+  font-family: Montserrat;
+  src: url("./lib/font-face/Montserrat/Montserrat-Regular.otf");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("./lib/font-face/Montserrat/Montserrat-SemiBold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Verdana;
+  src: url("./lib/font-face/Verdana/Verdana.ttf");
+}
+@font-face {
+  font-family: Verdana;
+  src: url("./lib/font-face/Verdana/VerdanaBold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./lib/font-face/WorkSans/WorkSans-VariableFont_wght.ttf");
+}
 
 body {
   background-color: $background;
@@ -27,6 +52,7 @@ body {
 
 
 .center-vertical-line {
+  display: none;
   position: fixed;
   width: 15vw;
   margin-left: 42.5vw;
@@ -34,6 +60,10 @@ body {
   background-color: $dark;
   height: 100vh;
   z-index: 1;
+
+  @media screen and (min-width: $breakout){
+    display: block;
+  }
 }
 
 footer {
