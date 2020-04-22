@@ -42,27 +42,19 @@ body {
 
 .center-vertical-line {
   position: fixed;
-  width: 15vw;
-  margin-left: 42.5vw;
-  margin-right: 42.5vw;
-  background-color: $dark;
-  height: 100vh;
-  z-index: 1;
-}
-
-
-.center-vertical-line {
-  display: none;
-  position: fixed;
-  width: 15vw;
-  margin-left: 42.5vw;
-  margin-right: 42.5vw;
-  background-color: $dark;
-  height: 100vh;
+  width: 20vw;
+  margin-left: 40vw;
+  margin-right: 40vw;
+  background-color: #afd0ff;
+  height: 150vh;
   z-index: 1;
 
-  @media screen and (min-width: $breakout){
-    display: block;
+  @media screen and (min-width: $breakout) {
+    width: 15vw;
+    margin-left: 42.5vw;
+    margin-right: 42.5vw;
+    background-color: $dark;
+    height: 100vh;
   }
 }
 
@@ -73,6 +65,10 @@ footer {
   height: 20vh;
   width: 100vw;
   z-index: 5;
-  background-color: $dark;
+  background-color: #afd0ff;
   margin-top: 10vh;
+
+  @media screen and (min-width: $breakout) {
+    background-color: $dark;
+  }
 }

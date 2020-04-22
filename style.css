@@ -108,14 +108,35 @@
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 15vw 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  height: 200vh;
-  width: 100vw;
+  height: 260vh;
+  width: 90vw;
   z-index: 5;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  grid-gap: 10vh;
+}
+@media screen and (min-width: 576px) {
+  .home-grid {
+    grid-template-columns: 1fr 1fr 1fr 15vw 1fr 1fr 1fr;
+    width: 100vw;
+    height: 200vh;
+    grid-gap: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 .home-grid .home-line {
+  display: none;
   z-index: 6;
+}
+@media screen and (min-width: 576px) {
+  .home-grid .home-line {
+    display: block;
+  }
 }
 .home-grid .home-line .line-container {
   height: 50%;
@@ -156,45 +177,77 @@
 }
 .home-grid .home-rubrique-right {
   background-color: #003459;
-  border-radius: 15% 0 0 15%;
-  opacity: 0;
+  border-radius: 15%;
+  z-index: 5;
+}
+@media screen and (min-width: 576px) {
+  .home-grid .home-rubrique-right {
+    border-radius: 15% 0 0 15%;
+    opacity: 0;
+  }
 }
 .home-grid .home-rubrique-left {
   background-color: #003459;
-  border-radius: 0 15% 15% 0;
-  opacity: 0;
+  border-radius: 15%;
+  z-index: 5;
+}
+@media screen and (min-width: 576px) {
+  .home-grid .home-rubrique-left {
+    border-radius: 0 15% 15% 0;
+    opacity: 0;
+  }
 }
 .home-grid #line1 {
   grid-column: 5;
   grid-row: 1;
 }
 .home-grid #rubrique1 {
-  grid-column: 6/8;
+  grid-column: 1;
   grid-row: 1;
+}
+@media screen and (min-width: 576px) {
+  .home-grid #rubrique1 {
+    grid-column: 6/8;
+  }
 }
 .home-grid #line2 {
   grid-column: 3;
   grid-row: 2;
 }
 .home-grid #rubrique2 {
-  grid-column: 1/3;
+  grid-column: 1;
   grid-row: 2;
+}
+@media screen and (min-width: 576px) {
+  .home-grid #rubrique2 {
+    grid-column: 1/3;
+  }
 }
 .home-grid #line3 {
   grid-column: 5;
   grid-row: 3;
 }
 .home-grid #rubrique3 {
-  grid-column: 6/8;
+  grid-column: 1;
   grid-row: 3;
+}
+@media screen and (min-width: 576px) {
+  .home-grid #rubrique3 {
+    grid-column: 6/8;
+  }
 }
 .home-grid #line4 {
   grid-column: 3;
   grid-row: 4;
 }
 .home-grid #rubrique4 {
-  grid-column: 1/3;
+  grid-column: 1;
   grid-row: 4;
+}
+@media screen and (min-width: 576px) {
+  .home-grid #rubrique4 {
+    grid-column: 1/3;
+  }
 }
 
 .rubrique-right {
@@ -216,7 +269,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 27px;
+}
+@media screen and (min-width: 576px) {
+  .rubrique-right .rubrique-title {
+    font-size: 30px;
+  }
 }
 .rubrique-right .rubrique-img-right {
   grid-row: 2;
@@ -229,7 +287,12 @@
   grid-column: 2/3;
   font-family: Montserrat;
   color: #f6fffc;
-  font-size: 18px;
+  font-size: 15px;
+}
+@media screen and (min-width: 576px) {
+  .rubrique-right .rubrique-text-right {
+    font-size: 18px;
+  }
 }
 
 .rubrique-left {
@@ -250,7 +313,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 27px;
+}
+@media screen and (min-width: 576px) {
+  .rubrique-left .rubrique-title {
+    font-size: 30px;
+  }
 }
 .rubrique-left .rubrique-img-left {
   grid-row: 2;
@@ -263,8 +331,13 @@
   grid-column: 1/2;
   font-family: Montserrat;
   color: #f6fffc;
-  font-size: 18px;
+  font-size: 15px;
   margin-left: 10px;
+}
+@media screen and (min-width: 576px) {
+  .rubrique-left .rubrique-text-left {
+    font-size: 18px;
+  }
 }
 
 .opaque-rubrique {
@@ -302,27 +375,20 @@ body {
 
 .center-vertical-line {
   position: fixed;
-  width: 15vw;
-  margin-left: 42.5vw;
-  margin-right: 42.5vw;
-  background-color: #00171F;
-  height: 100vh;
-  z-index: 1;
-}
-
-.center-vertical-line {
-  display: none;
-  position: fixed;
-  width: 15vw;
-  margin-left: 42.5vw;
-  margin-right: 42.5vw;
-  background-color: #00171F;
-  height: 100vh;
+  width: 20vw;
+  margin-left: 40vw;
+  margin-right: 40vw;
+  background-color: #afd0ff;
+  height: 150vh;
   z-index: 1;
 }
 @media screen and (min-width: 576px) {
   .center-vertical-line {
-    display: block;
+    width: 15vw;
+    margin-left: 42.5vw;
+    margin-right: 42.5vw;
+    background-color: #00171F;
+    height: 100vh;
   }
 }
 
@@ -333,8 +399,13 @@ footer {
   height: 20vh;
   width: 100vw;
   z-index: 5;
-  background-color: #00171F;
+  background-color: #afd0ff;
   margin-top: 10vh;
+}
+@media screen and (min-width: 576px) {
+  footer {
+    background-color: #00171F;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
