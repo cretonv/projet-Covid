@@ -37,6 +37,24 @@ $breakout: 576px;
 body {
   background-color: $background;
   margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#front-draw {
+  position: absolute;
+  right: -100px;
+  top: -50;
+  height: 200px;
+  width: auto;
+  opacity: 0.7;
+
+  @media screen and (min-width: $breakout) {
+    position: absolute;
+    right: -100px;
+    top: -70px;
+    height: 500px;
+  }
 }
 
 

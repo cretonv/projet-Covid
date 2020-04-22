@@ -88,6 +88,7 @@ $breakout: 576px;
     background-color: $third;
     border-radius: 15%;
     z-index: 5;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
     @media screen and (min-width: $breakout) {
       border-radius: 15% 0 0 15%;
@@ -99,6 +100,7 @@ $breakout: 576px;
     background-color: $third;
     border-radius: 15%;
     z-index: 5;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
     @media screen and (min-width: $breakout) {
       border-radius: 0 15% 15% 0;
@@ -172,7 +174,10 @@ $breakout: 576px;
   overflow: hidden;
   border-radius: 15% 0 0 15%;
   grid-gap: 10px;
-  transform: translateY(1px);
+
+  @media screen and (min-width: $breakout) {
+    transform: translateY(1px);
+  }
 
   .rubrique-title {
     grid-row: 1;
