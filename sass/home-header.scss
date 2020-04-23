@@ -17,6 +17,7 @@ $breakout: 576px;
   margin-left: 1vw;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows:  1fr 2fr 0.5fr 3fr 3fr;
+  transition: all 0.5s;
 
 
   @media screen and (min-width: $breakout) {
@@ -115,5 +116,9 @@ $breakout: 576px;
       font-size: 18px;
     }
   }
+}
 
+.front-grid.blur {
+  filter: blur(4px);
+  transition: all 0.5s;
 }

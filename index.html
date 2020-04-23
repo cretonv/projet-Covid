@@ -8,10 +8,29 @@
 </head>
 <body>
 
+    <div id="wrapper-mobile">
+
+
     <div class="center-vertical-line"></div>
     <img id="front-draw" src="./lib/img/frontDraw.svg" alt="">
 
-    <div class="front-grid">
+    <div class="burger" onclick="navbarappear()">
+        <div class="burger-line-wrap-0 burger-line-wrap oh">
+            <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.9s; width: 3vh;"></div>
+        </div>
+        <div class="burger-line-wrap-1 burger-line-wrap oh">
+            <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.7s; width: 3vh;"></div>
+        </div>
+        <div class="burger-line-wrap-2 burger-line-wrap oh">
+            <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.5s; width: 3vh;"></div>
+        </div>
+    </div>
+
+    <div id="mobile-navbar">
+        <div class="navbar-logo" style="background-image: url('./lib/img/logo.svg')"></div>
+    </div>
+
+    <div class="front-grid" onclick="navbardisappear()">
         <div class="front-title">
             <div class="big-title"> Des questions sur le COVID-19?</div> <br>
             <div class="title-baseline"> Vous êtes au bon endroit</div>
@@ -88,12 +107,16 @@
         </div>
     </div>
 
+
+
     <footer>
 
     </footer>
+    </div>
 
     <script src="./plugins/waypoint/lib/noframework.waypoints.min.js"></script>
     <script type="text/javascript" src="./JS/scroll_anim.js"></script>
+    <script type="text/javascript" src="./JS/navbar_anim.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,44 @@
+$primary: #23B5D3;
+$secondary: #007EA7;
+$third: #003459;
+$dark : #00171F;
+$background: #f6fffc; // Bubbles
+$big-title-police: Verdana;
+$little-title-police: "Work sans";
+$text-police: Montserrat;
+$breakout: 576px;
+
+#mobile-navbar {
+  background-color: $background;
+  height: 100vh;
+  width: 70vw;
+  position: absolute;
+  top: 0;
+  left: -70vw;
+  z-index: 15;
+  transition: all 0.5s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr repeat(4, 1fr) 2fr;
+  -webkit-box-shadow: 2px 0 5px 0 rgba(219,219,219,1);
+  -moz-box-shadow: 2px 0 5px 0 rgba(219,219,219,1);
+  box-shadow: 2px 0 5px 0 rgba(219,219,219,1);
+
+  .navbar-logo {
+    grid-column: 1;
+    grid-row: 1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+#mobile-navbar.visible {
+  left: 0 !important;
+  transition: all 0.5s;
+}
+
+
+
