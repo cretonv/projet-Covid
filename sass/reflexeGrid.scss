@@ -80,6 +80,7 @@ $breakout: 576px;
     background-color: $primary;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 
     display: flex;
     justify-content: center;
@@ -89,6 +90,13 @@ $breakout: 576px;
       cursor: pointer;
       background-color: $third;
       transition: all 0.2s;
+
+      @media screen and (min-width: $breakout){
+        .reflexe-icon {
+          transition: all 0.4s;
+          transform: translateX(-150%);
+        }
+      }
     }
 
     .reflexe-icon {
@@ -99,6 +107,26 @@ $breakout: 576px;
       width: 50%;
       margin-right: 25%;
       margin-left: 25%;
+      transition: all 0.4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .reflexe-name {
+        position: relative;
+        color: $background;
+        text-align: center;
+        font-family: $little-title-police;
+        transition: all 0.4s;
+        font-size: 1.5vh;
+        bottom: -75%;
+
+        @media screen and (min-width: $breakout){
+          transform: translateX(150%) translateY(12%);
+          font-size: 1.5vw;
+          bottom: 0;
+        }
+      }
     }
   }
 

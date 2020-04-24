@@ -651,6 +651,7 @@
   background-color: #23B5D3;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -660,6 +661,12 @@
   background-color: #003459;
   transition: all 0.2s;
 }
+@media screen and (min-width: 576px) {
+  .reflexe-grid .reflexe-container:hover .reflexe-icon {
+    transition: all 0.4s;
+    transform: translateX(-150%);
+  }
+}
 .reflexe-grid .reflexe-container .reflexe-icon {
   background-position: center;
   background-repeat: no-repeat;
@@ -668,6 +675,26 @@
   width: 50%;
   margin-right: 25%;
   margin-left: 25%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reflexe-grid .reflexe-container .reflexe-icon .reflexe-name {
+  position: relative;
+  color: #f6fffc;
+  text-align: center;
+  font-family: "Work sans";
+  transition: all 0.4s;
+  font-size: 1.5vh;
+  bottom: -75%;
+}
+@media screen and (min-width: 576px) {
+  .reflexe-grid .reflexe-container .reflexe-icon .reflexe-name {
+    transform: translateX(150%) translateY(12%);
+    font-size: 1.5vw;
+    bottom: 0;
+  }
 }
 .reflexe-grid #reflexe1 {
   grid-row: 2;
