@@ -27,6 +27,37 @@ $breakout: 576px;
     height: 100vh;
   }
 
+  .front-logo-mobile{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-row: 1;
+    grid-column: 2;
+    z-index: 5;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    @media screen and (min-width: $breakout){
+      display: none;
+    }
+  }
+
+  .front-logo-desktop {
+    display: none;
+    z-index: 5;
+
+    @media screen and (min-width: $breakout) {
+      display: block;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      grid-row: 1;
+      grid-column: 3;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
 
   .front-title {
     grid-column: 1 / 4;

@@ -2,13 +2,17 @@
 
 .burger {
     position: absolute;
-    left: 2vh;
-    top: 2vh;
+    left: 0.6vh;
+    top: 0.5vh;
     width: 7vh;
     height: 7vh;
     overflow: hidden;
     z-index: 10;
     cursor: pointer;
+
+    @media screen and(min-width: $breakout){
+        display: none;
+    }
 }
 
 .burger-line-wrap {             /* Style des lignes horizontales*/
@@ -16,7 +20,7 @@
     width: 3vh;
     right: 2vh;
     position: absolute;
-    height: 0.1vh;
+    height: 0.4vh;
     transition: width 0.4s;
 }
 

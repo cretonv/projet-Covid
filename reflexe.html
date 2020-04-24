@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les bons réflexes</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b1c169adef.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div id="wrapper-mobile">
+        <div class="burger" onclick="navbarappear()">
+            <div class="burger-line-wrap-0 burger-line-wrap oh">
+                <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.9s; width: 3vh;"></div>
+            </div>
+            <div class="burger-line-wrap-1 burger-line-wrap oh">
+                <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.7s; width: 3vh;"></div>
+            </div>
+            <div class="burger-line-wrap-2 burger-line-wrap oh">
+                <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.5s; width: 3vh;"></div>
+            </div>
+        </div>
+
+        <div id="mobile-navbar">
+            <div class="navbar-logo" style="background-image: url('./lib/img/logo.svg')"></div>
+            <div id="navbar-item1" class="navbar-item"> <i class="fas fa-hands-wash" style="margin-right: 4px;">  </i>  Bon réflexe </div>
+            <div id="navbar-item2" class="navbar-item"> <i class="fas fa-newspaper" style="margin-right: 4px;"></i>  Fake news / Rumeurs </div>
+            <div id="navbar-item3" class="navbar-item"> <i class="fas fa-question" style="margin-right: 4px;"></i> Infos sur le Covid 19 </div>
+            <div id="navbar-item4" class="navbar-item"> <i class="fas fa-book" style="margin-right: 4px;"></i>  Ressources </div>
+        </div>
+
+        <div class="reflexe-grid" onclick="navbardisappear()">
+            <div class="front-logo-mobile" style="background-image: url('./lib/img/notext_logo.svg')"></div>
+            <div class="front-logo-desktop" style="background-image: url('./lib/img/logo.svg')"></div>
+
+            <div id="menu-item1" class="menu-item"><span class="nav-item"> Bon réflexe </span></div>
+            <div id="menu-item2" class="menu-item"><span class="nav-item"> Fake news / Rumeurs </span></div>
+            <div id="menu-item3" class="menu-item"><span class="nav-item"> Infos sur le Covid 19 </span></div>
+            <div id="menu-item4" class="menu-item"><span class="nav-item"> Ressources </span></div>
+
+            <div id="reflexe-title">
+                <span class="title">BONS <br> RÉFLEXES <br>→</span>
+            </div>
+            <div id="reflexe1" class="reflexe-container">
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/hand-washing.svg')"></div>
+            </div>
+            <div id="reflexe2" class="reflexe-container">
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/mask.svg')"></div>
+            </div>
+            <div id="reflexe3" class="reflexe-container">
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/coude.svg')"></div>
+            </div>
+            <div id="reflexe4" class="reflexe-container">
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/home.svg')"></div>
+            </div>
+            <div id="reflexe5" class="reflexe-container">
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/download.svg')"></div>
+            </div>
+            <div id="reflexe6" class="reflexe-container">
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/gym.svg')"></div>
+            </div>
+            <div id="reflexe7" class="reflexe-container">
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/repas.svg')"></div>
+            </div>
+            <div id="reflexe8" class="reflexe-container">
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/video-conference.svg')"></div>
+            </div>
+            <div id="reflexe9" class="reflexe-container" >
+                <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/routine.svg'); transform: translateY(10px)"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./JS/navbar_anim.js"></script>
+
+</body>
+</html>
