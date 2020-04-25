@@ -8,6 +8,8 @@ $little-title-police: "Work sans";
 $text-police: Montserrat;
 $breakout: 576px;
 
+@import './reflexeInfos';
+
 .reflexe-grid {
   width: 100vw;
   display: grid;
@@ -21,23 +23,10 @@ $breakout: 576px;
     height: 100vh;
   }
 
-  .front-logo-mobile{
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 20vw;
-    height: auto;
-    z-index: 5;
-    margin: 5px 40vw;
-
-    @media screen and (min-width: $breakout){
-      display: none;
-    }
-  }
-
   .front-logo-desktop {
     display: none;
     z-index: 5;
+
 
     @media screen and (min-width: $breakout) {
       display: block;
@@ -48,6 +37,11 @@ $breakout: 576px;
       grid-column: 3;
       margin-top: 5px;
       margin-bottom: 5px;
+
+      a div {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -206,9 +200,57 @@ $breakout: 576px;
       grid-column: 5;
     }
   }
+
+  .footer {
+    grid-row: 7;
+    grid-column: 1 / 3;
+    background-color: $secondary;
+    height: 100%;
+    width: 100%;
+    border-top: solid $third 1px;
+
+    @media screen and (min-width: $breakout) {
+      grid-row: 4;
+      grid-column: 1 / 6;
+    }
+  }
 }
 
 .reflexe-grid.blur {
   filter: blur(4px);
   transition: all 0.5s;
+}
+
+.mobile-reflexe-header {
+  position: fixed;
+  height: 10vh;
+  background-color: $background;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  @media screen and (min-width: $breakout){
+    display: none;
+  }
+
+  .front-logo-mobile{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 8vh;
+    z-index: 5;
+    margin: 5px 40vw;
+
+    a div {
+      height: 100%;
+      width: 100%;
+    }
+
+    @media screen and (min-width: $breakout){
+      display: none;
+    }
+  }
 }

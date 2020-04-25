@@ -10,7 +10,7 @@
 <body>
 
     <div id="wrapper-mobile">
-        <div class="burger" onclick="navbarappear()">
+        <div class="burger" style="position: fixed !important;" onclick="navbarappear()">
             <div class="burger-line-wrap-0 burger-line-wrap oh">
                 <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.9s; width: 3vh;"></div>
             </div>
@@ -23,18 +23,25 @@
         </div>
 
         <div id="mobile-navbar">
-            <div class="navbar-logo" style="background-image: url('./lib/img/logo.svg')"></div>
-            <div id="navbar-item1" class="navbar-item"> <i class="fas fa-hands-wash" style="margin-right: 4px;">  </i>  Bon réflexe </div>
+            <div class="navbar-logo" style="background-image: url('./lib/img/logo.svg')"><a href="./index.html"><div></div></a></div>
+            <div id="navbar-item1" class="navbar-item"><a href="./reflexe.html"><i class="fas fa-hands-wash" style="margin-right: 4px;">  </i>  Bon réflexe </a></div>
             <div id="navbar-item2" class="navbar-item"> <i class="fas fa-newspaper" style="margin-right: 4px;"></i>  Fake news / Rumeurs </div>
             <div id="navbar-item3" class="navbar-item"> <i class="fas fa-question" style="margin-right: 4px;"></i> Infos sur le Covid 19 </div>
             <div id="navbar-item4" class="navbar-item"> <i class="fas fa-book" style="margin-right: 4px;"></i>  Ressources </div>
         </div>
 
-        <div class="reflexe-grid" onclick="navbardisappear()">
-            <div class="front-logo-mobile" style="background-image: url('./lib/img/notext_logo.svg')"></div>
-            <div class="front-logo-desktop" style="background-image: url('./lib/img/logo.svg')"></div>
+        <div class="mobile-reflexe-header">
+            <div class="front-logo-mobile" style="background-image: url('./lib/img/notext_logo.svg')">
+                <a href="./index.html"><div></div></a>
+            </div>
+        </div>
 
-            <div id="menu-item1" class="menu-item"><span class="nav-item"> Bon réflexe </span></div>
+        <div class="reflexe-grid" onclick="navbardisappear()">
+            <div class="front-logo-desktop" style="background-image: url('./lib/img/logo.svg')">
+                <a href="./index.html"><div></div></a>
+            </div>
+
+            <div id="menu-item1" class="menu-item"><span class="nav-item"><a href="./reflexe.html"> Bon réflexe </a></span></div>
             <div id="menu-item2" class="menu-item"><span class="nav-item"> Fake news / Rumeurs </span></div>
             <div id="menu-item3" class="menu-item"><span class="nav-item"> Infos sur le Covid 19 </span></div>
             <div id="menu-item4" class="menu-item"><span class="nav-item"> Ressources </span></div>
@@ -42,57 +49,177 @@
             <div id="reflexe-title">
                 <span class="title">BONS <br> RÉFLEXES <br>→</span>
             </div>
-            <div id="reflexe1" class="reflexe-container">
-
+            <div id="reflexe1" class="reflexe-container" onclick="infos_appear(0)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/hand-washing.svg')">
                     <div class="reflexe-name">Laver ses mains régulièrement </div>
                 </div>
             </div>
-            <div id="reflexe2" class="reflexe-container">
+            <div id="reflexe2" class="reflexe-container" onclick="infos_appear(1)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/mask.svg')">
                     <div class="reflexe-name"> Porter un masque </div>
                 </div>
             </div>
-            <div id="reflexe3" class="reflexe-container">
+            <div id="reflexe3" class="reflexe-container" onclick="infos_appear(2)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/coude.svg')">
                     <div class="reflexe-name"> Tousser dans son coude </div>
                 </div>
             </div>
-            <div id="reflexe4" class="reflexe-container">
+            <div id="reflexe4" class="reflexe-container" onclick="infos_appear(3)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/home.svg')">
                     <div class="reflexe-name"> Rester chez soi </div>
                 </div>
             </div>
-            <div id="reflexe5" class="reflexe-container">
+            <div id="reflexe5" class="reflexe-container" onclick="infos_appear(4)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/download.svg')">
                     <div class="reflexe-name"> Télécharger et éviter le streaming </div>
                 </div>
             </div>
-            <div id="reflexe6" class="reflexe-container">
+            <div id="reflexe6" class="reflexe-container" onclick="infos_appear(5)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/gym.svg')">
                     <div class="reflexe-name"> Continuer l'activité physique </div>
                 </div>
             </div>
-            <div id="reflexe7" class="reflexe-container">
+            <div id="reflexe7" class="reflexe-container" onclick="infos_appear(6)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/repas.svg')">
                     <div class="reflexe-name"> Surveiller sa nutrition </div>
                 </div>
             </div>
-            <div id="reflexe8" class="reflexe-container">
+            <div id="reflexe8" class="reflexe-container" onclick="infos_appear(7)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/video-conference.svg')">
                     <div class="reflexe-name"> Garder contact avec ses proches</div>
                 </div>
             </div>
-            <div id="reflexe9" class="reflexe-container" >
+            <div id="reflexe9" class="reflexe-container" onclick="infos_appear(8)">
                 <div class="reflexe-icon" style="background-image: url('./lib/img/reflexesIcons/routine.svg'); /*transform: translateY(10px)*/">
                     <div class="reflexe-name"> Eviter la routine</div>
                 </div>
             </div>
+
+            <div class="footer">
+
+            </div>
         </div>
 
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/hand-washing.svg')"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Laver ses mains régulièrement
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(0)"><i class="fas fa-arrow-left"></i></div>
+        </div>
+
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/mask.svg');"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Porter un masque
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(1)"><i class="fas fa-arrow-left"></i></div>
+        </div>
+
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/coude.svg');"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Tousser dans son coude
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(2)"><i class="fas fa-arrow-left"></i></div>
+        </div>
+
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/home.svg');"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Rester chez soi
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(3)"><i class="fas fa-arrow-left"></i></div>
+        </div>
+
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/download.svg');"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Télécharger et éviter le streaming
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(4)"><i class="fas fa-arrow-left"></i></div>
+        </div>
+
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/gym.svg');"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Continuer l'activité physique
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(5)"><i class="fas fa-arrow-left"></i></div>
+        </div>
+
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/repas.svg');"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Surveiller sa nutrition
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(6)"><i class="fas fa-arrow-left"></i></div>
+        </div>
+
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/video-conference.svg');"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Garder contact avec ses proches
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(7)"><i class="fas fa-arrow-left"></i></div>
+        </div>
+
+        <div class="reflexe-info" onclick="navbardisappear()">
+            <div class="reflexe-info-logo-container">
+                <div class="reflexe-info-logo" style="background-image: url('./lib/img/reflexesIcons/routine.svg');"></div>
+            </div>
+            <div class="reflexe-info-title">
+                Éviter la routine
+            </div>
+            <div class="reflexe-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt eius exercitationem in sed voluptatibus. A et impedit iste necessitatibus non officia qui repudiandae saepe sint, totam vero voluptatem voluptatum.
+            </div>
+            <div class="return-arrow" onclick="infos_disappear(8)"><i class="fas fa-arrow-left"></i></div>
+        </div>
     </div>
 
     <script type="text/javascript" src="./JS/navbar_anim.js"></script>
+    <script type="text/javascript" src="./JS/reflexesInfos_anim.js"></script>
 
 </body>
 </html>

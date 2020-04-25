@@ -1,7 +1,9 @@
 let navbar = document.querySelector('#mobile-navbar')
 let mobile_wrapper = document.querySelector("#wrapper-mobile")
 let front_grid = document.querySelector(".front-grid")
+
 let reflexe_grid = document.querySelector(".reflexe-grid")
+
 let navbar_open = false
 
 function navbarappear() {
@@ -11,6 +13,10 @@ function navbarappear() {
         front_grid.classList.add('blur')
     } else if(reflexe_grid) {
         reflexe_grid.classList.add('blur')
+        let open_reflexe_info = document.querySelector(".reflexe-info.open")
+        if(open_reflexe_info){
+            open_reflexe_info.classList.add('blur')
+        }
     }
     navbar_open = true
 }
@@ -23,6 +29,10 @@ function navbardisappear() {
             front_grid.classList.remove('blur')
         } else if(reflexe_grid) {
             reflexe_grid.classList.remove('blur')
+            let open_reflexe_info = document.querySelector(".reflexe-info.open")
+            if(open_reflexe_info){
+                open_reflexe_info.classList.remove('blur')
+            }
         }
         navbar_open = false
     }

@@ -34,6 +34,15 @@ $breakout: 576px;
   src: url("./lib/font-face/WorkSans/WorkSans-VariableFont_wght.ttf");
 }
 
+a {
+  text-decoration: none;
+  color: $dark;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 body {
   background-color: $background;
   margin: 0;
