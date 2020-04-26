@@ -1,0 +1,1 @@
+import {FakeNews} from './class/FakeNews'
