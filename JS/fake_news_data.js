@@ -4,7 +4,7 @@ import {change_color} from "./change_color";
 let all_news = []
 
 /* Éléments à récupérer dans le fichier HTML */
-let news_content_container = document.querySelector('.news-content')
+let news_content_container = document.querySelector('#fake-news-content')
 let source_name_container = document.querySelector('#source-name')
 let real_source_name_container = document.querySelector('#real-source-name')
 let button_left = document.querySelector('#chevron-left')
@@ -25,6 +25,10 @@ function new_fake_news() {
 
     let index_choose = getRandomArbitrary(0, all_news.length)
     let fakeNews_choose = all_news[index_choose]
+
+    source_name_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 300})
+    real_source_name_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 300})
+    news_content_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 300})
 
     news_content_container.innerHTML = fakeNews_choose.news_Content
     source_name_container.innerHTML = fakeNews_choose.source_name
