@@ -3,12 +3,20 @@ import {change_color} from "./change_color";
 
 let all_news = []
 
+let color = ["#23B5D3", '#007EA7', '#003459']
+let color_choose = 0
+
+let nav_bar_complete = false        // Prmet de savoir si la navbar est déjà remplis
+
 /* Éléments à récupérer dans le fichier HTML */
 let news_content_container = document.querySelector('#fake-news-content')
 let source_name_container = document.querySelector('#source-name')
 let real_source_name_container = document.querySelector('#real-source-name')
 let button_left = document.querySelector('#chevron-left')
 let button_right = document.querySelector('#chevron-right')
+let navbar = document.querySelector('.fake-news-navbar')
+let button_nav_news = document.querySelector('.nav-news')
+let nav_cross = document.querySelector('#nav-cross')
 
 /* Remplissage du tableau de data */
 all_news.push(new FakeNews("Les boissons chaudes tuent le virus.", '<b> Sources :</b> <br> Rumeur <br>', '<b> Démentie par :</b> <br> France Info'))
@@ -46,3 +54,35 @@ function getRandomArbitrary(min, max) {
 
 button_left.addEventListener("click", new_fake_news, false)
 button_right.addEventListener("click", new_fake_news, false)
+
+function create_element_nav(id) {
+    let content = all_news[id].news_Content
+    let sources = all_news[id].real_source_name
+
+    return "<div class=\"navbar-card\" style='background-color:" + color[color_choose] + "'><div class=\"content\">" + content + "</div><div class=\"source\">" + sources + "</div></div>"
+}
+
+function createNav() {
+    navbar.classList.add('open')
+    nav_cross.classList.add('visible')
+
+    if(nav_bar_complete === false){
+        for(let i = 0; i < all_news.length; i++){
+            navbar.innerHTML += create_element_nav(i)
+            color_choose ++
+            if (color_choose === color.length){
+                color_choose = 0;
+            }
+        }
+        nav_bar_complete = true
+    }
+}
+
+function closeNav() {
+    navbar.classList.remove('open')
+    nav_cross.classList.remove('visible')
+    window.scrollTo(0, 0);
+}
+
+button_nav_news.addEventListener("click", createNav, false)
+nav_cross.addEventListener("click", closeNav, false)

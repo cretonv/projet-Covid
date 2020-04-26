@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="wrapper-mobile">
-        <div class="burger" style="position: fixed !important;" onclick="navbarappear()">
+        <div class="burger" style="position: fixed !important; z-index: 30;" onclick="navbarappear()">
             <div class="burger-line-wrap-0 burger-line-wrap oh">
                 <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.9s; width: 3vh;"></div>
             </div>
@@ -20,6 +20,7 @@
                 <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.5s; width: 3vh;"></div>
             </div>
         </div>
+        <i id="nav-cross" class="fas fa-times"></i>
 
         <div id="mobile-navbar">
             <div class="navbar-logo" style="background-image: url('./lib/img/logo.svg')"><a href="./index.html"><div></div></a></div>
@@ -84,8 +85,10 @@
             <div class="background" style="background-image: url('./lib/img/backFakeNews.svg')">
 
             </div>
-        </div>
 
+
+        </div>
+        <div class="fake-news-navbar"></div>
     </div>
 
 
