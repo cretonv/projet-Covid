@@ -201,6 +201,7 @@ $breakout: 576px;
       grid-row: 3;
       grid-column: 1;
       font-size: 19px;
+      cursor: pointer;
     }
   }
 
@@ -217,7 +218,22 @@ $breakout: 576px;
     align-items: center;
 
     @media screen and (min-width: $breakout) {
-      display: none;
+      grid-row: 3;
+      grid-column: 1;
+      padding-left: 50px;
+
+      .icon-line {
+        z-index: 5;
+        margin-top: 80px;
+        opacity: 0;
+        transition: all 0.4s;
+        font-size: 25px;
+      }
+
+      .icon-line.visible {
+        opacity: 1;
+        transition: all 0.4s;
+      }
     }
   }
 

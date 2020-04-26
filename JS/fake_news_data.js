@@ -26,9 +26,9 @@ function new_fake_news() {
     let index_choose = getRandomArbitrary(0, all_news.length)
     let fakeNews_choose = all_news[index_choose]
 
-    source_name_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 300})
-    real_source_name_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 300})
-    news_content_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 300})
+    source_name_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 400})
+    real_source_name_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 400})
+    news_content_container.animate([ {opacity: 0}, {opacity: 1}], {duration: 400})
 
     news_content_container.innerHTML = fakeNews_choose.news_Content
     source_name_container.innerHTML = fakeNews_choose.source_name

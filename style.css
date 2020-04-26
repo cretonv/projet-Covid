@@ -1091,6 +1091,7 @@
     grid-row: 3;
     grid-column: 1;
     font-size: 19px;
+    cursor: pointer;
   }
 }
 .fakeNewsGrid .partage-icons {
@@ -1106,7 +1107,20 @@
 }
 @media screen and (min-width: 576px) {
   .fakeNewsGrid .partage-icons {
-    display: none;
+    grid-row: 3;
+    grid-column: 1;
+    padding-left: 50px;
+  }
+  .fakeNewsGrid .partage-icons .icon-line {
+    z-index: 5;
+    margin-top: 80px;
+    opacity: 0;
+    transition: all 0.4s;
+    font-size: 25px;
+  }
+  .fakeNewsGrid .partage-icons .icon-line.visible {
+    opacity: 1;
+    transition: all 0.4s;
   }
 }
 .fakeNewsGrid .footer {
