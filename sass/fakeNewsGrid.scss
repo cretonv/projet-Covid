@@ -54,6 +54,10 @@ $breakout: 576px;
     align-items: center;
     padding-left: 20px;
 
+    i {
+      cursor: pointer;
+    }
+
     @media screen and (min-width: $breakout) {
       grid-row: 2;
       grid-column: 1;
@@ -283,4 +287,8 @@ $breakout: 576px;
       display: none;
     }
   }
+}
+
+.color-change, .element-color-change{
+  transition: background-color 0.3s;
 }

@@ -7,7 +7,7 @@ class FakeNews {
     constructor(news_Content, source_name, real_source_name) {
         this.news_Content = news_Content
         this.source_name = source_name
-        this._real_source_name = real_source_name
+        this.real_source_name = real_source_name
     }
 
     get news_Content() {
@@ -19,7 +19,7 @@ class FakeNews {
     }
 
     get real_source_name() {
-        return this._real_source_name;
+        return this.real_source_name;
     }
 }
 
