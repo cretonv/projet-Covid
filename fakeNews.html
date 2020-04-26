@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b1c169adef.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="wrapper-mobile">
+        <div class="burger" style="position: fixed !important;" onclick="navbarappear()">
+            <div class="burger-line-wrap-0 burger-line-wrap oh">
+                <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.9s; width: 3vh;"></div>
+            </div>
+            <div class="burger-line-wrap-1 burger-line-wrap oh">
+                <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.7s; width: 3vh;"></div>
+            </div>
+            <div class="burger-line-wrap-2 burger-line-wrap oh">
+                <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.5s; width: 3vh;"></div>
+            </div>
+        </div>
+
+        <div id="mobile-navbar">
+            <div class="navbar-logo" style="background-image: url('./lib/img/logo.svg')"><a href="./index.html"><div></div></a></div>
+            <div id="navbar-item1" class="navbar-item"><a href="./reflexe.html"><i class="fas fa-hands-wash" style="margin-right: 4px;">  </i>  Bon réflexe </a></div>
+            <div id="navbar-item2" class="navbar-item"> <i class="fas fa-newspaper" style="margin-right: 4px;"></i>  Fake news / Rumeurs </div>
+            <div id="navbar-item3" class="navbar-item"> <i class="fas fa-question" style="margin-right: 4px;"></i> Infos sur le Covid 19 </div>
+            <div id="navbar-item4" class="navbar-item"> <i class="fas fa-book" style="margin-right: 4px;"></i>  Ressources </div>
+        </div>
+
+        <div class="mobile-fakeNews-header">
+            <div class="front-logo-mobile" style="background-image: url('./lib/img/notext_logo.svg')">
+                <a href="./index.html"><div></div></a>
+            </div>
+        </div>
+
+        <div class="fakeNewsGrid" onclick="navbardisappear()">
+
+            <div class="front-logo-desktop" style="background-image: url('./lib/img/logo.svg')">
+                <a href="./index.html"><div></div></a>
+            </div>
+
+            <div id="menu-item1" class="menu-item"><span class="nav-item"><a href="./reflexe.html"> Bon réflexe </a></span></div>
+            <div id="menu-item2" class="menu-item"><span class="nav-item"> Fake news / Rumeurs </span></div>
+            <div id="menu-item3" class="menu-item"><span class="nav-item"> Infos sur le Covid 19 </span></div>
+            <div id="menu-item4" class="menu-item"><span class="nav-item"> Ressources </span></div>
+
+            <div class="commands">
+                <i class="fas fa-chevron-left" style="margin-right: 15px"></i>
+                <i class="fas fa-chevron-right" style="margin-left: 15px"></i>
+            </div>
+            <div class="spacer"></div>
+            <div class="nav-news">
+                <img src="./lib/img/navNews.svg" alt="">
+            </div>
+            <div class="news-content">
+                Les boissons chaudes tuent le virus.
+            </div>
+            <div class="sources">
+                <span id="source-name">
+                    <b> Sources :</b> <br> Inconnue <br>
+                </span>
+            </div>
+            <div class="true-source">
+                <span id="real-source-name">
+                    <b> Démentie par :</b> <br> France Info
+                </span>
+            </div>
+            <div class="partage-word">
+                <span><i class="fas fa-share" style="margin-right: 4px;"></i> Partager</span>
+            </div>
+            <div class="partage-icons">
+                <span class="icon-line">
+                    <i class="fas fa-at" style="margin-right: 4px;"></i>
+                    <i class="fab fa-twitter"  style="margin-right: 4px;"></i>
+                    <i class="fab fa-facebook-f" style="margin-right: 4px;"></i>
+                </span>
+            </div>
+            <div class="footer">
+
+            </div>
+
+            <div class="background" style="background-image: url('./lib/img/backFakeNews.svg')">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="./JS/navbar_anim.js"></script>
+
+</body>
+</html>

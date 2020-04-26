@@ -8,7 +8,7 @@ $little-title-police: "Work sans";
 $text-police: Montserrat;
 $breakout: 576px;
 
-@import './home-header.scss', './home-main.scss', './menu.scss', './burger.scss', './reflexeGrid.scss';
+@import './home-header.scss', './home-main.scss', './menu.scss', './burger.scss', './reflexeGrid.scss', './fakeNewsGrid.scss';
 @font-face {
   font-family: Montserrat;
   src: url("./lib/font-face/Montserrat/Montserrat-Regular.otf");
