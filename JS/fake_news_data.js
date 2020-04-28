@@ -65,6 +65,7 @@ function create_element_nav(id) {
 function createNav() {
     navbar.classList.add('open')
     nav_cross.classList.add('visible')
+    document.querySelector('body').style.overflowY = 'visible'
 
     if(nav_bar_complete === false){
         for(let i = 0; i < all_news.length; i++){
@@ -81,7 +82,8 @@ function createNav() {
 function closeNav() {
     navbar.classList.remove('open')
     nav_cross.classList.remove('visible')
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0)
+    document.querySelector('body').style.overflowY = 'hidden'
 }
 
 button_nav_news.addEventListener("click", createNav, false)
