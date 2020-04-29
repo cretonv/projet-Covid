@@ -229,6 +229,10 @@ $breakout: 576px;
         opacity: 0;
         transition: all 0.4s;
         font-size: 25px;
+
+        i:hover {
+          cursor: pointer;
+        }
       }
 
       .icon-line.visible {

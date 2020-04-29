@@ -20,13 +20,13 @@ let button_nav_news = document.querySelector('.nav-news')
 let nav_cross = document.querySelector('#nav-cross')
 
 /* Remplissage du tableau de data */
-all_news.push(new FakeNews("Les boissons chaudes tuent le virus.", '<b> Sources :</b> <br> Rumeur <br>', '<a href="https://www.francetvinfo.fr/sante/maladie/coronavirus/les-idees-claires-covid-19-une-epidemie-de-fake-news_3883173.html" target="_blank"><b> Démentie par :</b> <br> France Info</a>'))
-all_news.push(new FakeNews("Il faut désinfecter tout les objets que l'on touche 5 fois par jour.", '<b> Sources :</b> <br> Rumeur <br>', '<a href="https://www.francetvinfo.fr/sante/maladie/coronavirus/les-idees-claires-covid-19-une-epidemie-de-fake-news_3883173.html" target="_blank"><b> Démentie par :</b> <br> France Info</a>'))
-all_news.push(new FakeNews("Il faut laver ses vêtements plus souvent et à haute température.", '<b> Sources :</b> <br> Rumeur <br>', '<a href="https://www.francetvinfo.fr/sante/maladie/coronavirus/les-idees-claires-covid-19-une-epidemie-de-fake-news_3883173.html" target="_blank"><b> Démentie par :</b> <br> France Info</a>'))
+all_news.push(new FakeNews("Les boissons chaudes tuent le virus.", '<b> Sources :</b> <br> Rumeur <br>', '<b> Démentie par :</b> <br> France Info'))
+all_news.push(new FakeNews("Il faut désinfecter tout les objets que l'on touche 5 fois par jour.", '<b> Sources :</b> <br> Rumeur <br>', '<b> Démentie par :</b> <br> France Info'))
+all_news.push(new FakeNews("Il faut laver ses vêtements plus souvent et à haute température.", '<b> Sources :</b> <br> Rumeur <br>', '<b> Démentie par :</b> <br> France Info'))
 all_news.push(new FakeNews("La grippe est plus mortelle que le covid-19.", '<b> Sources :</b> <br> Rumeur <br>', "<b> Démentie par :</b> <br> 28'-Désintox <br> Arte"))
 all_news.push(new FakeNews("Le gouvernement profite du confinement pour généraliser la 5G", '<b> Sources :</b> <br> Infos déformés <br>', "<b> Démentie par :</b> <br> 28'-Désintox <br> Arte"))
 all_news.push(new FakeNews("Les marseillais sont la population la plus testée au monde", '<b> Sources :</b> <br> Fake News <br>', "<b> Démentie par :</b> <br> 28'-Désintox <br> Arte"))
-all_news.push(new FakeNews("Il existe une liste d'hôpitaux qui appliquent le « protocole Raoult »", '<b> Sources :</b> <br> Fake News <br>', "<a href='https://www.francetvinfo.fr/sante/maladie/coronavirus/desintox-non-il-n-y-a-pas-de-liste-d-hopitaux-qui-appliquent-le-protocole-raoult_3929131.html' target='_blank'><b> Démentie par :</b> <br> 28'-Désintox <br> Arte</a>"))
+all_news.push(new FakeNews("Il existe une liste d'hôpitaux qui appliquent le « protocole Raoult »", '<b> Sources :</b> <br> Fake News <br>', "<b> Démentie par :</b> <br> 28'-Désintox <br> Arte"))
 all_news.push(new FakeNews("Il est prévu qu’un vaccin soit obligatoire pour obtenir un visa Schengen", '<b> Sources :</b> <br> Fake News <br>', "<b> Démentie par :</b> <br> France Info"))
 all_news.push(new FakeNews("Le prix des produits de première nécéssité a augmenté", '<b> Sources :</b> <br> Rumeur <br>', "<b> Démentie par :</b> <br> France Info"))
 

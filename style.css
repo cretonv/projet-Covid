@@ -1119,6 +1119,9 @@
     transition: all 0.4s;
     font-size: 25px;
   }
+  .fakeNewsGrid .partage-icons .icon-line i:hover {
+    cursor: pointer;
+  }
   .fakeNewsGrid .partage-icons .icon-line.visible {
     opacity: 1;
     transition: all 0.4s;
