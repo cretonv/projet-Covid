@@ -208,10 +208,39 @@ $breakout: 576px;
     height: 100%;
     width: 100%;
     border-top: solid $third 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    color: $background;
+    font-family: $text-police;
+    font-size: 10px;
 
     @media screen and (min-width: $breakout) {
       grid-row: 4;
       grid-column: 1 / 6;
+      font-size: 15px;
+    }
+
+    .copyright {
+      grid-column: 1;
+      grid-row: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 30px;
+    }
+
+    .auteur {
+      grid-column: 3;
+      grid-row: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 30px;
+
+      a {
+        color: $background;
+      }
     }
   }
 }

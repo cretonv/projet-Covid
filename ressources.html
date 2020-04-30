@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ressources</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b1c169adef.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="overflow-y: hidden">
+<div id="wrapper-mobile">
+    <div class="burger" style="position: fixed !important; z-index: 30;" onclick="navbarappear()">
+        <div class="burger-line-wrap-0 burger-line-wrap oh">
+            <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.9s; width: 3vh;"></div>
+        </div>
+        <div class="burger-line-wrap-1 burger-line-wrap oh">
+            <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.7s; width: 3vh;"></div>
+        </div>
+        <div class="burger-line-wrap-2 burger-line-wrap oh">
+            <div class="burger-line burger-line-dark" style="transform: translate3d(0%, 0px, 0px); transition: width 0.5s; width: 3vh;"></div>
+        </div>
+    </div>
+
+    <div id="mobile-navbar">
+        <div class="navbar-logo" style="background-image: url('./lib/img/logo.svg')"><a href="./index.html"><div></div></a></div>
+        <div id="navbar-item1" class="navbar-item"><a href="./reflexe.html"><i class="fas fa-hands-wash" style="margin-right: 4px;">  </i>  Bons réflexes </a></div>
+        <div id="navbar-item2" class="navbar-item"><a href="./fakeNews.html"><i class="fas fa-newspaper" style="margin-right: 4px;"></i>  Fake news / Rumeurs </a></div>
+        <div id="navbar-item3" class="navbar-item"><a href="./infos.html"> <i class="fas fa-question" style="margin-right: 4px;"></i> Infos sur le Covid 19 </a></div>
+        <div id="navbar-item4" class="navbar-item"> <i class="fas fa-book" style="margin-right: 4px;"></i>  Ressources </div>
+    </div>
+
+    <div class="mobile-fakeNews-header" onclick="navbardisappear()">
+        <div class="front-logo-mobile" style="background-image: url('./lib/img/notext_logo.svg')">
+            <a href="./index.html"><div></div></a>
+        </div>
+    </div>
+
+    <div class="ressourcesGrid" onclick="navbardisappear()">
+
+        <div class="menu-line">
+            <div id="menu-item1" class="menu-item"><span class="nav-item"><a href="./reflexe.html"> Bons réflexes </a></span></div>
+            <div id="menu-item2" class="menu-item"><span class="nav-item"><a href="./fakeNews.html"> Fake news / Rumeurs </a></span></div>
+            <div class="front-logo-desktop" style="background-image: url('./lib/img/logo.svg')">
+                <a href="./index.html"><div></div></a>
+            </div>
+            <div id="menu-item3" class="menu-item"><span class="nav-item"><a href="./infos.html"> Infos sur le Covid 19 </a></span></div>
+            <div id="menu-item4" class="menu-item"><span class="nav-item"> Ressources </span></div>
+        </div>
+
+        <div id="ressource1" class="ressource" onclick="window.location='https://www.francetvinfo.fr/';">
+            <div class="logo" style="background-image: url('./lib/img/ressourcesIcons/Franceinfo.png')"></div>
+        </div>
+        <div id="ressource2" class="ressource"  onclick="window.location='https://www.lemonde.fr/';">
+            <div class="logo" style="background-image: url('./lib/img/ressourcesIcons/LeMonde.png')"></div>
+        </div>
+        <div id="ressource3" class="ressource" onclick="window.location='https://twitter.com/afpfr';">
+            <div class="logo" style="background-image: url('./lib/img/ressourcesIcons/AFP.svg')"></div>
+        </div>
+        <div id="ressource4" class="ressource" onclick="window.location='https://www.liberation.fr/';">
+            <div class="logo" style="background-image: url('./lib/img/ressourcesIcons/Libération.png')"></div>
+        </div>
+
+        <div class="footer">
+            <div class="copyright">
+                Infos Covid <br> Site réalisé dans le cadre du projet Covid (S4 MMI)
+            </div>
+            <div class="auteur">
+                <a href="https://vincent-creton.fr" target="_blank">Réalisé par Vincent Creton</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="fake-news-navbar"></div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="./JS/navbar_anim.js"></script>
+<script type="module" src="./JS/news_data.js"></script>
+<script type="text/javascript" src="./JS/partage_icon_apparition.js"></script>
+<script type="text/javascript" src="./JS/reseaux_News.js"></script>
+
+</body>

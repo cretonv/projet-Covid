@@ -6,6 +6,8 @@ let reflexe_grid = document.querySelector(".reflexe-grid")
 
 let fakeNews_grid = document.querySelector('.fakeNewsGrid')
 
+let ressources_grid = document.querySelector('.ressourcesGrid')
+
 let navbar_open = false
 
 function navbarappear() {
@@ -21,6 +23,8 @@ function navbarappear() {
         }
     } else if(fakeNews_grid) {
         fakeNews_grid.classList.add('blur')
+    } else if(ressources_grid){
+        ressources_grid.classList.add('blur')
     }
     navbar_open = true
 }
@@ -39,6 +43,8 @@ function navbardisappear() {
             }
         } else if(fakeNews_grid) {
             fakeNews_grid.classList.remove('blur')
+        } else if(ressources_grid){
+            ressources_grid.classList.remove('blur')
         }
         navbar_open = false
     }

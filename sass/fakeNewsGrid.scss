@@ -251,11 +251,12 @@ $breakout: 576px;
     grid-template-rows: 1fr;
     color: $background;
     font-family: $text-police;
-    font-size: 15px;
+    font-size: 10px;
 
     @media screen and (min-width: $breakout) {
       grid-row: 4;
       grid-column: 1 / 6;
+      font-size: 15px;
     }
 
     .copyright {
